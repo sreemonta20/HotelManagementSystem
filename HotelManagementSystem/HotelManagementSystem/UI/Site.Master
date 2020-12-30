@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HotelManagementSystem.UI.Site" %>
+
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ Register Src="~/UI/UserControls/MenuTreeMain.ascx" TagName="MenuTreeMains" TagPrefix="uc1" %>
+<%@ Register Src="~/UI/UserControls/SettingMain.ascx" TagName="SettingMains" TagPrefix="uc2" %>
+<%@ Register Src="~/UI/UserControls/FooterMain.ascx" TagName="FooterMains" TagPrefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>HMS Solutions::- Hotel Management System</title>
+    <link rel="SHORTCUT ICON" href="Images/basis.bmp" />
+    <script src="../Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
+    <script src="../Scripts/calendar-en.min.js" type="text/javascript"></script>
+    <link href="../App_Themes/MSN_Blue/calendar-blue.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="mnu">
+    <form id="form1" runat="server">
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="header">
+            <tr>
+                <td class="logo">
+
+                    <asp:Image ID="Image1" runat="server" SkinID="logo" Width="184px" />
+
+                </td>
+                <td>
+                    <%--<div class="title">
+                        Hotel Management System
+                    </div>
+                    <div class="loginDisplay">
+                        <a href="~/Security/Register.aspx" id="HeadRegisterStatus" runat="server">Register</a>
+                    </div>
+                    <div class="loginDisplay">
+                        <asp:Label ID="lblLogin" runat="server" Text=""></asp:Label> | <asp:LinkButton ID="lnkLogin" runat="server" Text="Login" OnClick="lnkLogin_Click"></asp:LinkButton>
+                    </div>--%>
+
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="title">Hotel Management System</td>
+
+                            <td class="loginDisplay"><a href="~/UI/Register.aspx" id="HeadRegisterStatus" runat="server">Register</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="loginDisplay">
+                                <asp:Label ID="lblLogin" runat="server" Text=""></asp:Label>
+                                [
+                                <asp:LinkButton ID="lnkLogin" runat="server" Text="Login" OnClick="lnkLogin_Click"></asp:LinkButton>]</td>
+                        </tr>
+                    </table>
+
+                </td>
+
+            </tr>
+        </table>
+
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td colspan="1" class="headerbar" style="height: 19px">&nbsp;&nbsp;&nbsp;
+                </td>
+                <td class="headerbar" style="height: 19px">&nbsp;&nbsp;
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                </td>
+            </tr>
+            <tr>
+                <td id="leftSide" class="menu" rowspan="2">
+
+                    <asp:Panel ID="properties_HeaderPanel" runat="server" Style="cursor: pointer; text-align: right;">
+                        <div class="heading" align="right">
+                            <asp:ImageButton ID="Image2" runat="server" ImageUrl="~/Images/expand_blue.jpg" ImageAlign="Right" />
+                        </div>
+                    </asp:Panel>
+
+                    <asp:Panel ID="pnlTree" runat="server">
+
+                        <br />
+                        <asp:WebPartManager ID="WebPartMgr1" runat="server">
+                            <Personalization Enabled="false" />
+                        </asp:WebPartManager>
+                        <br />
+
+                        <asp:WebPartZone ID="WebPartZone1" runat="server" SkinID="MenuZone">
+                            <ZoneTemplate>
+
+                                <uc1:MenuTreeMains ID="menuTree" runat="server" />
+                                <uc2:SettingMains ID="setting" runat="server" />
+                            </ZoneTemplate>
+                        </asp:WebPartZone>
+
+                    </asp:Panel>
+                </td>
+                <td class="menu2" valign="top" style="height: 402px">
+                    <div>
+                        <blockquote class="mnu" style="text-align: left; margin-bottom: 19px;">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                            &nbsp;
+                        <ajaxToolkit:CollapsiblePanelExtender ID="cpeProperties" runat="Server" CollapseControlID="properties_HeaderPanel"
+                            Collapsed="False" ExpandControlID="properties_HeaderPanel" ExpandDirection="Horizontal"
+                            TargetControlID="pnlTree" ImageControlID="Image2" ExpandedText="(Hide Details...)" CollapsedText="(Show Details...)"
+                            ExpandedImage="~/Images/collapse_blue.jpg" CollapsedImage="~/Images/expand_blue.jpg"
+                            SuppressPostBack="true">
+                        </ajaxToolkit:CollapsiblePanelExtender>
+                        </blockquote>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="menu2" valign="bottom">
+                    <uc3:FooterMains ID="Footer" runat="server" />
+                    <br />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,488 @@
+/* Common tags   text-transform: uppercase;              */
+/*-----------------------------*/		
+
+body 
+{
+    font-family:Verdana;
+    font-size:small;
+    color:#000000;
+    margin: 0;
+    padding: 0;
+	margin-right: 30;
+	text-align: left;
+ }
+
+A:link      { color: #41519A; text-decoration:none; }
+A:visited 	{ color: #41519A; text-decoration:none; }
+A:active 	{ color: #41519A;  cursor:hand; text-decoration:none; }
+A:hover 	{ color: #B2C3E1;  cursor:hand; text-decoration:"underline"; }
+		
+A.bodyLink:link     { color: #41519A; text-decoration:none; font-weight:bold; }
+A.bodyLink:visited 	{ color: #41519A; text-decoration:none; font-weight:bold; }
+A.bodyLink:active 	{ color: #41519A;  cursor:hand; text-decoration:none; font-weight:bold; }
+A.bodyLink:hover 	{ color: #B2C3E1;  cursor:hand; text-decoration:"underline"; font-weight:bold; }
+		
+p
+{
+	line-height: 1.4em;
+}
+
+/*.title
+{
+    
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: bold;
+ }*/
+.title
+{
+    
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: bold;
+ }
+
+
+
+hr {
+	border-top: 2px solid #41519A;
+	height: 2px;
+	width: 387px;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: 0;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: 0;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: 0;
+}
+
+img
+{
+	border-width: 0;
+	margin-right: 0px;
+}
+
+ul
+{
+	list-style-image: url(Images/bullet.jpg);
+	list-style-position: outside;
+	list-style-type: disc;
+	color: #000000;
+	font-family: verdana;
+}
+
+.menutextindent
+{
+    font-size: 11px;
+    font-style :normal ;
+}
+
+.footerwrap {
+width: auto;
+background-color : #fff; 
+margin-left: 3px; 
+margin-right: 3px;
+margin-top: 2px;
+margin-bottom: 2px;
+font-size : 11px; 
+color : #595959; 
+font-weight: Bold;
+text-align: center;
+font-family : arial, verdana, helvetica, sans-serif; 
+text-decoration : none; 
+}
+
+.dt2:link {
+font-family : verdana, Verdana, helvetica, sans-serif;
+color : #007AF4; 
+font-weight : normal; 
+font-size : 11px; 
+text-decoration : none; 
+} 
+
+.content2 {
+font-size : 11px; 
+color : #595959; 
+font-weight: normal;
+font-family : verdana, arial, helvetica, sans-serif; 
+text-decoration : none; 
+}
+
+/* Headings    #6B7EBF                */
+/*-----------------------------*/
+h1
+{
+	font-size: large;
+	color: #6B7EBF
+}
+
+h2
+{
+	font-family: Verdana;
+	font-size: medium;
+	margin-top: 30;
+	color: #6B7EBF;
+	margin-bottom: -15;
+}
+	
+h3
+{
+	font-family: Verdana;
+	font-size: small;
+	margin-bottom: -15;
+	color: #6B7EBF;
+	padding-left: 15;
+}
+
+h1, h2, h3, h4
+{
+	margin: 0;
+	font-family: Verdana;
+}
+
+/* Tables                      */
+/*-----------------------------*/	
+table
+{
+	font-size: 1em;
+	height: 3px;
+}
+
+td.pageheader
+{
+	background-color :#6B7EBF;
+	text-align :center;
+	font-size: large;
+	font-family :Verdana;
+	color :White;
+	}
+
+table.header
+{
+	  background-color:#5B6DB5;	  
+}
+
+td.logo
+{
+	text-align: left;
+	width: 184px;
+	background-color: White;
+	
+}
+
+/*td.title 
+	{
+		text-align: center;
+		font-family: verdana;
+		font-size: x-large;
+		font-weight: bolder;
+		color: #FFFFFF;
+	}*/
+td.title 
+	{
+		text-align: center;
+		font-family: verdana;
+		font-size: x-large;
+		font-weight: bolder;
+		color: #FFFFFF;
+	}	
+
+td.headerbar 
+{
+	background-image: url(Images/bar.jpg);
+	text-align: right;
+	height: 24px;
+}
+
+.mnu
+{
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+	text-decoration: none;
+}
+
+td.menu 
+{
+	background-color:#41519A;
+	width: auto;
+	height: 500px;
+	vertical-align: top;
+}
+
+
+td.menu2 
+{
+	
+	width: 100%;
+	
+	
+}
+
+td.footer
+{
+	margin-left: 30;
+	font-family: Verdana;
+	font-size:xx-small;
+	font-weight: normal;
+	color: #41519A;
+	text-align: right;
+}
+
+.btn
+{
+	border-color: #41519A;
+	border-style: Solid;
+	border-width:thin;
+	background-color: White;
+	color: #41519A;
+	font-family:Verdana ;
+	font-size :12;
+}
+
+.btn2
+{
+	border-color: #41519A;
+	border-style: Solid;
+	border-width: 1px;
+	background-color: White;
+	color: #41519A;
+	font: small;
+	cursor:pointer;
+}
+
+.btn2:hover
+{
+	border-width: 1px;
+	border-color: #41519A;
+	background-color:#41519A;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+.cmb
+{
+     
+    font: 10pt verdana; 
+    border-color: #41519A;
+	border-style: Solid;
+    font-weight:300;
+    color:#41519A; 
+}
+
+.txtbox
+{
+    font: 10pt verdana; 
+    font-weight:300; 
+	border-color: #41519A;
+	border-style: Solid;
+	border-width: 1px;
+	background-color: White;
+	color: #41519A;
+}
+
+
+
+.gd
+{
+    
+    border-color :gray;
+    border-style:solid;
+    border-bottom-width:1px;
+    
+}
+    
+
+
+.tbl
+{
+	font-weight: 300;
+	color: #330099;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 10pt;
+	line-height: normal;
+	font-family: verdana;
+}
+
+.tblblack
+{
+	color: black;
+	font: 10pt verdana;
+	font-weight: 300;
+}
+
+
+.tblmas
+{
+	background: #f0f8ff;
+	
+}
+.tblbig
+{
+	font: 11pt verdana;
+	font-weight: 300;
+	color: white;
+	background-color:#6B7EBF;
+}
+
+.tblw
+{
+	background-color: #99ccff;
+}
+
+
+.tcell
+
+{
+    border-color :Blue;
+    background-color :gray;
+    font: bold 12pt verdana; 
+    background-color :gray;
+    font-weight:500;
+    color:white;    
+}
+
+
+.cal
+{
+    border-color :Blue;
+ font: 8pt verdana; 
+  color:white;       
+}
+
+.border
+
+{
+    border-color:gray;
+    border-style:outset;
+    border-width:1px;    
+}
+
+
+
+/* for accordion*/
+.accordionHeader
+{
+    border: 1px solid #41519A;
+    color: #41519A;
+    background-color:  #99ACDD;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.accordionHeader a
+{
+	color:black;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeader:hover
+{
+	color:#99ACDD;
+	background-color:  #41519A;	
+	text-decoration: none;
+	
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #41519A;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeaderSelected:hover
+{
+	color: #41519A;
+    background-color:  #99ACDD;
+	text-decoration: none;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    padding: 5px;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+
+.modalBackground {
+	background-color:#6B7EBF;
+	filter:alpha(opacity=20);
+	opacity:0.5;
+}
+
+.modalPopup {
+	background-color:#f0f8ff;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+.tdcell
+{
+	 font: 10pt verdana;
+	font-weight: 300;
+	color: black;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	/*word-wrap: break-word; */      /* Internet Explorer 5.5+ */
+}
+/*--------------------Login Display in Master Page----------------------*/
+
+
+td.loginDisplay
+{
+    vertical-align:text-top;
+    float:right;
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+    
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Products module="ROOT">
+
+  <Products module="hotelmanagement">
+    <hotelmanagement ID="1_1" Text="Home Page" Tergate="Home.aspx" Tooltip="Home Page" />
+    <hotelmanagement ID="1_2" Text="User Login" Tergate="UserLogin.aspx" Tooltip="User Login" />
+    <hotelmanagement ID="1_3" Text="Register" Tergate="Register.aspx" Tooltip="Register" />
+
+  </Products>
+
+</Products>
